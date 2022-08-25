@@ -26,7 +26,7 @@ export class PostsComponent implements OnInit {
     }
 
     updatePost(post){
-      this.httpClient.patch(this.url, JSON.stringify(isRead: true))
+      this.httpClient.patch ${(this.url + '/' + post.id, JSON.stringify(isRead: true))
       //you can use put if the Api doesn't support patch
       //this.httpClient.put(this.url, JSON.stringify(post))
         .subscribe(response => {
